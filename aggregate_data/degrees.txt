@@ -1,0 +1,29 @@
+Postgraduate Degree Level
+Postgraduate Degree Level, nfd
+Doctoral Degree Level
+Master Degree Level
+Graduate Diploma and Graduate Certificate Level
+Graduate Diploma and Graduate Certificate Level, nfd
+Graduate Diploma Level
+Graduate Certificate Level
+Bachelor Degree Level
+Bachelor Degree Level
+Advanced Diploma and Diploma Level
+Advanced Diploma and Diploma Level, nfd
+Advanced Diploma and Associate Degree Level 
+Diploma Level
+Certificate III & IV Level
+Certificate III & IV Level, nfd
+Certificate IV
+Certificate III
+Years 10 and above
+Year 12
+Year 11
+Year 10
+Certificate I & II Level Advanced Diploma and Diploma Level
+Certificate I & II Level, nfd
+Certificate II
+Certificate I
+Years 9 and below
+Year 9
+Year 8 or below
