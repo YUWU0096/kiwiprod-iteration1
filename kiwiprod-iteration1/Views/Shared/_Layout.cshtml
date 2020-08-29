@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md d-flex align-items-center">
+                    <img src="~/src/img/logo.png" alt="" style="width:40px">
+                    <p class="mb-0 phone"><span class="kiwiprod-title"> KiwiProd</span></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+
+            <div class="col-xl-3 col-lg-3">
+                <div class="logo-img">
+                    <a class="navbar-brand" href="~/Home/Index">
+                        <span> hopMe</span>
+                    </a>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="~/Home/Index" class="nav-link">Home</a></li>
+                    <li class="nav-item active"><a href="~/Home/HowItWork" class="nav-link">How it works</a></li>
+                    <li class="nav-item active"><a href="~/Search/Analysis" class="nav-link">Get career advice</a></li>
+                    <li class="nav-item active"><a href="~/Home/News" class="nav-link">News</a></li>
+                    <li class="nav-item active"><a href="~/Home/Contact" class="nav-link">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    @*<div class="container body-content">
+
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
+            </footer>
+        </div>*@
+    @RenderBody()
+    @*<footer class="ftco-footer ftco-footer-2 ftco-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-footer-logo">IT<span>solution</span></h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <ul class="ftco-footer-social list-unstyled mt-2">
+                                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </footer>*@
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <script type="text/javascript" src="../js/prototype_functions.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.easing.1.3.js"></script>
+    <script src="~/js/jquery.waypoints.min.js"></script>
+    <script src="~/js/jquery.stellar.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.animateNumber.min.js"></script>
+    <script src="~/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="~/js/google-map.js"></script>
+    <script src="~/js/main.js"></script>
+</body>
+</html>
