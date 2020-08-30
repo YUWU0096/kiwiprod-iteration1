@@ -18,16 +18,18 @@ namespace kiwiprod_iteration1.Controllers
             ViewBag.education = new SelectList(sd.EducationLevelSet, "Id", "level");
             ViewBag.skill = new SelectList(sd.SkillsSet, "Id", "skillName");
             //ViewBag.education = new SelectList(sd.EducationLevelSet, "Id", "level");
+           
+            
+           
             return View();
         }
         
         [HttpPost]
-    
-        public ActionResult Result(FormCollection sd)
+
+        public ActionResult Analysis(searchDBEntities sc)
         {
-            ViewBag.result = sd["education"];
-          
-            return View();
+           
+            return View(sc);
 
         }
     

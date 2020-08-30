@@ -1,4 +1,5 @@
-﻿
+﻿@using  kiwiprod_iteration1.Models
+@model searchDBEntities
 @{
     ViewBag.Title = "Analysis";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -25,7 +26,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="~/css/analysis.css">
-  
+
     <!-- import montserrat font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -37,20 +38,21 @@
             <choose>Choose your education level:</choose>
         </div>
     </div>
-    @using (Html.BeginForm("SubmitEmp", "Search", FormMethod.Post)) { 
-    <form action="/action_page.php">
-        <div class="container" style="width:100%">
+    @using (Html.BeginForm("SubmitEmp", "Search", FormMethod.Post))
+    {
+<form action="/action_page.php">
+    <div class="container" style="width:100%">
 
-            @*<div class="col-sm-4">
+        @*<div class="col-sm-4">
                 <label for="age">Age</label><br>
                 @Html.DropDownList("age", ViewBag.age as SelectList, "-- Select Age --", new { style = "width: 100%" })
             </div>*@
-            <div class="col-sm-4">
-                <Education>Education</Education><br>
-                @Html.DropDownList("education", ViewBag.education as SelectList, "-- Select Education Level --", new { style = "width: 100%" })
-           
-            </div>
-            @*<div class="col-sm-4">
+        <div class="col-sm-4">
+            <Education>Education</Education><br>
+            @Html.DropDownList("education", ViewBag.education as SelectList, "-- Select Education Level --", new { style = "width: 100%" })
+
+        </div>
+        @*<div class="col-sm-4">
                 <label for="skill">Skill</label><br>
                 @Html.DropDownList("skill", ViewBag.skill as SelectList, "-- Select skill --", new { style = "width: 100%" })
             </div>
@@ -59,20 +61,24 @@
                 <input style="width:100%" type="text" id="Location" name="Location">
             </div>*@
 
+    </div>
+    <div class="row" style="padding-top:10%; width:100%">
+        <!-- page transition should be handled by MVC managers -->
+        <div class="col-lg" style="width:100%; text-align:center">
+            <input id="Submit" type="submit" value="submit" />
+            @*<analysis-btn2 type="button" value="Submit" onclick="location.href='~/Search/Result'">Get your Analysis!</analysis-btn2>*@
         </div>
-        <div class="row" style="padding-top:10%; width:100%">
-            <!-- page transition should be handled by MVC managers -->
-            <div class="col-lg" style="width:100%; text-align:center">
-                <analysis-btn2 type="button" value ="Submit" onclick="location.href='../Search/Result'">Get your Analysis!</analysis-btn2>
-            </div>
-        </div>
-    </form>
+    </div>
+    <h1>Test: </h1> @Html.DisplayFor(m => m.EducationLevelSet)<br />
+</form>
+       
     }
     <script src="./js/jquery-3.5.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <script type="text/javascript" src="./js/prototype_functions.js"></script>
-    <script>$(document).ready(function() {
+    <script>
+        $(document).ready(function () {
             $('.js-example-basic-multiple').select2();
         });</script>
 </body>
