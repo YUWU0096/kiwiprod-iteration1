@@ -4,9 +4,6 @@ html {
 }
 
 kiwiprod-title {
-    position: absolute;
-    left: 134px;
-    top: 39px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -16,20 +13,12 @@ kiwiprod-title {
 }
 
 title-dots {
-    position: absolute;
-    left: 200px;
-    top: 20px;
     font-weight: bold;
     font-size: 70px;
     color: white;
 }
 
 subtitle {
-    position: absolute;
-    width: 492px;
-    height: 189px;
-    left: 108px;
-    top: 365px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -39,11 +28,6 @@ subtitle {
 }
 
 additional-info {
-    position: absolute;
-    width: 476px;
-    height: 141px;
-    left: 108px;
-    top: 460px;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
