@@ -38,29 +38,38 @@
         <div class="row" style="margin-top:15%">
             <div class="col-lg">
                 <p style="font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 200%; line-height: 44px; color: #094A68; ">Your employment rate <br />based on educaiton level:</p>
-                <p style="font-family: Montserrat; 
-                            font-style: normal; font-weight: 600; 
+                <p style="font-family: Montserrat;
+                            font-style: normal; font-weight: 600;
                             font-size: 120px;
-                            line-height: 146px; 
+                            line-height: 146px;
                             color: #F7D062;
                             background: #FFFFFF;
                             text-align:center;
                             box-shadow: 0px 2px 15px rgba(255, 196, 91, 0.58);
-                            border-radius: 101px;"> @ViewBag.rate </p>
-            </div>
-          
-            <div class="col-sm" style="">
-                <img src="~/src/img/employment_share_victoria_pie.png" class="img-fluid" alt="">
-            </div>
-        </div>
-         <analysis-btn type="button" style="color: #094A68;"
-                value="Show latest job news" onclick="location.href='../Home/news2"> </analysis-btn>
-       
-       
-    </div>
-    
+                            border-radius: 101px;"> @ViewBag.rate % </p>
+                        </div>
 
-</body>
+                        <div class="col-sm" style="">
+                            <img src="~/src/img/employment_share_victoria_pie.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <analysis-btn type="button" style="background: #FFFFFF; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1); border-radius: 33px;width:auto;padding:6px"
+                                      onclick="location.href='../Home/news2'">Show latest job news </analysis-btn>
+                    </div>
+
+
+                    <div class="row">
+                        <a class="col-4" href="../Search/Analysis" style="text-align:left;margin-bottom:10px">
+                            <img src="~/src/img/Vector2.svg">
+                        </a>
+                    </div>
+
+                </div>
+   
+                
+
+            </body>
 
 
 

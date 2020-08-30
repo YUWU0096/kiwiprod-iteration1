@@ -68,15 +68,20 @@ hopme{
     font-size: 24px;
     line-height: 158.47%;
     color: #27A2DB;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  
+}
+.analysis-btn2 {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 33px;
+}
    
-    
-}
 
-
-dashed-box {
-    border: 4px dashed rgba(255, 255, 255, 0.8);
-    box-sizing: border-box;
-}
+    dashed-box {
+        border: 4px dashed rgba(255, 255, 255, 0.8);
+        box-sizing: border-box;
+    }
 
 transparent-box {
     background: rgba(255, 255, 255, 0.2);

@@ -261,10 +261,15 @@
     <Content Include="src\img\892b8d6d6f7d23c10cd7c43878ba627.png" />
     <Content Include="src\img\arrow-left-bl.png" />
     <Content Include="src\img\austin-distel-gUIJ0YszPig-unsplash.png" />
+    <Content Include="src\img\Ellipse 10.png" />
+    <Content Include="src\img\Ellipse 7.png" />
+    <Content Include="src\img\Ellipse 8.png" />
+    <Content Include="src\img\Ellipse 9.png" />
     <Content Include="src\img\employment_share_victoria.png" />
     <Content Include="src\img\employment_share_victoria_pie.png" />
     <Content Include="src\img\evangeline-shaw-VLkoOabAxqw-unsplash.png" />
     <Content Include="src\img\frontpage_infographic.png" />
+    <Content Include="src\img\hopme.png" />
     <Content Include="src\img\laptop-guy.png" />
     <Content Include="src\img\logo.png" />
     <Content Include="src\img\ml_image.png" />
@@ -382,6 +387,7 @@
     <Content Include="Views\Search\Analysis.cshtml" />
     <Content Include="Views\Home\news2.cshtml" />
     <Content Include="Views\Search\Result.cshtml" />
+    <Content Include="Views\Home\Aboutus.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

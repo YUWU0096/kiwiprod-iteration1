@@ -32,11 +32,7 @@
             font-weight: bold;
             color: #094A68;
         }
-        .analysis-btn::after {
-            position: relative;
-            left: 80px;
-            content: url("~/src/img/Vector");
-        }
+     
     </style>
 </head>
 
@@ -72,7 +68,11 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <analysis-btn type="button" onclick="location.href='../Search/Analysis'">Get your Analysis!</analysis-btn>
+            <analysis-btn type="button" style="width:300px" onclick="location.href='../Search/Analysis'">
+                Get your Analysis!
+                <img src="~/src/img/Vector.svg"/>
+            </analysis-btn>
+            
         </div>
     </div>
   

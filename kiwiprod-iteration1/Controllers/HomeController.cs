@@ -26,7 +26,7 @@ namespace kiwiprod_iteration1.Controllers
 
             return View();
         }
-        public ActionResult News()
+        public ActionResult Aboutus()
         {
 
 

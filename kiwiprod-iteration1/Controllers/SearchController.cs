@@ -44,7 +44,7 @@ namespace kiwiprod_iteration1.Controllers
                     if (degree.Degree == ViewBag.Msg)
                     {
 
-                        ViewBag.rate = degree.Employment_Rate.ToString("#.##");
+                        ViewBag.rate = degree.Employment_Rate.ToString("#.#");
                     }
                 }
             }
