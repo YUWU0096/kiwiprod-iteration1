@@ -7,14 +7,14 @@ kiwiprod-title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 100%;
     line-height: 29px;
     color: #FFFFFF;
 }
 
 title-dots {
     font-weight: bold;
-    font-size: 70px;
+    font-size: 200%;
     color: white;
 }
 
@@ -22,7 +22,7 @@ subtitle {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 2vh;
+    font-size: 21px;
     line-height: 46px;
     color: #FFFFFF;
 }
@@ -31,7 +31,7 @@ additional-info {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
-    font-size: 1vh;
+    font-size: 16px ;
     line-height: 28px;
     color: #FFFFFF;
 }
@@ -41,7 +41,7 @@ hopme {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 500%;
+    font-size: 72px;
     line-height: 158.47%;
     /* or 174px */
     letter-spacing: -0.075em;
