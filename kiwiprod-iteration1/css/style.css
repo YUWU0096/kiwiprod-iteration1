@@ -40,24 +40,13 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
+
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fff; }
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -8207,7 +8196,7 @@ h1, h2, h3, h4, h5,
   z-index: 3; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000000 !important;
+     
       position: relative;
       top: 0;
       padding-top: 0;
@@ -8217,7 +8206,7 @@ h1, h2, h3, h4, h5,
     margin: 0 auto; }
     @media (min-width: 992px) {
       .ftco-navbar-light .container {
-        background: #fff;
+        
         border-radius: 4px; } }
   .ftco-navbar-light .navbar-brand {
     color: #323edd;

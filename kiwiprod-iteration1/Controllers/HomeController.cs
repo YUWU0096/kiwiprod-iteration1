@@ -33,5 +33,12 @@ namespace kiwiprod_iteration1.Controllers
             return View();
         }
 
+        public ActionResult news2()
+        {
+
+
+            return View();
+        }
+
     }
 }

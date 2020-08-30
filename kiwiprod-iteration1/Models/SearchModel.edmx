@@ -4,13 +4,20 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="searchDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="searchDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="AgeSet">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="age" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="degreeEmployment">
+          <Key>
+            <PropertyRef Name="Degree" />
+          </Key>
+          <Property Name="Degree" Type="varchar" MaxLength="39" Nullable="false" />
+          <Property Name="Employment_Rate" Type="numeric" Precision="17" Scale="14" Nullable="false" />
         </EntityType>
         <EntityType Name="EducationLevelSet">
           <Key>
@@ -35,12 +42,12 @@
         </EntityType>
         <EntityContainer Name="searchDBModelStoreContainer">
           <EntitySet Name="AgeSet" EntityType="Self.AgeSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="degreeEmployment" EntityType="Self.degreeEmployment" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="EducationLevelSet" EntityType="Self.EducationLevelSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="LocationSet" EntityType="Self.LocationSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SkillsSet" EntityType="Self.SkillsSet" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="searchDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -77,7 +84,15 @@
           <EntitySet Name="EducationLevelSet" EntityType="Self.EducationLevelSet" />
           <EntitySet Name="LocationSet" EntityType="Self.LocationSet" />
           <EntitySet Name="SkillsSet" EntityType="Self.SkillsSet" />
+          <EntitySet Name="degreeEmployment" EntityType="searchDBModel.degreeEmployment" />
         </EntityContainer>
+        <EntityType Name="degreeEmployment">
+          <Key>
+            <PropertyRef Name="Degree" />
+          </Key>
+          <Property Name="Degree" Type="String" Nullable="false" MaxLength="39" FixedLength="false" Unicode="false" />
+          <Property Name="Employment_Rate" Type="Decimal" Nullable="false" Precision="17" Scale="14" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -113,6 +128,14 @@
               <MappingFragment StoreEntitySet="SkillsSet">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="skillName" ColumnName="skillName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="degreeEmployment">
+            <EntityTypeMapping TypeName="searchDBModel.degreeEmployment">
+              <MappingFragment StoreEntitySet="degreeEmployment">
+                <ScalarProperty Name="Employment_Rate" ColumnName="Employment_Rate" />
+                <ScalarProperty Name="Degree" ColumnName="Degree" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

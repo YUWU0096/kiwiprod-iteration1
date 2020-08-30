@@ -1,0 +1,27 @@
+﻿choose {
+    /* Choose your education level: */
+    width: 534px;
+    height: 44px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+Education {
+    /* Education level */
+    position: absolute;
+    width: 143px;
+    height: 29px;
+  
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 158.47%;
+    /* identical to box height, or 29px */
+    color: #FFFFFF;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}

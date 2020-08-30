@@ -145,6 +145,9 @@
     <Compile Include="Models\AgeSet.cs">
       <DependentUpon>SearchModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\degreeEmployment.cs">
+      <DependentUpon>SearchModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\EducationLevelSet.cs">
       <DependentUpon>SearchModel.tt</DependentUpon>
     </Compile>
@@ -181,6 +184,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="css\ajax-loader.gif" />
+    <Content Include="css\analysis.css" />
     <Content Include="css\animate.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\flaticon.css" />
@@ -188,6 +192,7 @@
     <Content Include="css\owl.carousel.min.css" />
     <Content Include="css\owl.theme.default.min.css" />
     <Content Include="css\prototype_background_stylesheet.css" />
+    <Content Include="css\howitwork.css" />
     <Content Include="css\prototype_stylesheet.css" />
     <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
@@ -212,7 +217,6 @@
     <Content Include="js\main.js" />
     <Content Include="js\owl.carousel.min.js" />
     <Content Include="js\popper.min.js" />
-    <Content Include="js\prototype_functions.js" />
     <Content Include="js\scrollax.min.js" />
     <Content Include="Models\SearchModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -253,9 +257,12 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="src\img\287f32dab9cc416c4332e4a0951ba7b.png" />
+    <Content Include="src\img\892b8d6d6f7d23c10cd7c43878ba627.png" />
     <Content Include="src\img\arrow-left-bl.png" />
     <Content Include="src\img\austin-distel-gUIJ0YszPig-unsplash.png" />
     <Content Include="src\img\evangeline-shaw-VLkoOabAxqw-unsplash.png" />
+    <Content Include="src\img\frontpage_infographic.png" />
     <Content Include="src\img\laptop-guy.png" />
     <Content Include="src\img\logo.png" />
     <Content Include="src\img\ml_image.png" />
@@ -368,8 +375,9 @@
     <Content Include="scss\bootstrap\_utilities.scss" />
     <Content Include="scss\bootstrap\_variables.scss" />
     <Content Include="scss\style.scss" />
-    <Content Include="Views\Home\News.cshtml" />
     <Content Include="Views\Search\Analysis.cshtml" />
+    <Content Include="Views\Home\news2.cshtml" />
+    <Content Include="Views\Search\Result.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

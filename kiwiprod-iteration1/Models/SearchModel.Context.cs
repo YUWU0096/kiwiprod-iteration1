@@ -29,5 +29,6 @@ namespace kiwiprod_iteration1.Models
         public virtual DbSet<EducationLevelSet> EducationLevelSet { get; set; }
         public virtual DbSet<LocationSet> LocationSet { get; set; }
         public virtual DbSet<SkillsSet> SkillsSet { get; set; }
+        public virtual DbSet<degreeEmployment> degreeEmployment { get; set; }
     }
 }

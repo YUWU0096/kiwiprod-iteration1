@@ -22,25 +22,33 @@
     <link rel="stylesheet" href="~/css/style.css">
 
 
-    <link rel="stylesheet" type="text/css" href="~/css/prototype_stylesheet.css">
+    <link rel="stylesheet"  href="~/css/howitwork.css">
     <!-- import montserrat font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
-<body >
+<body style="background-color: #f4f4f4">
+    <div class="row">
+        <div class="col-sm">
+            <kiwiprod-title style="position: absolute; width: 119.12px; height: 65.54px; left: 132px; top: 71px; color:#094A68">Kiwiprod</kiwiprod-title>
+            <title-dots style="position:absolute; top: 37.5%; bottom: 37.5%; color:#094A68">...</title-dots>
+        </div>
+    </div>
+    /// should modify
+
     <div class="container" style="width:100%; background-color: #f4f4f4">
 
         <div class="row" style="margin-top:15%">
             <div class="col-lg">
-                <p style="text-align: center; font-size: 50px; font-weight: bold; color: #31a1c6; ">Here is how it works</p>
+                <p style="text-align: center; font-size: 70px; font-weight: bold; color: #094A68; ">Here is how it works</p>
             </div>
         </div>
 
         <div class="row" style="width:100%">
             <div class="col-sm">
                 <img src="~/src/img/skill_image.png" class="img-fluid" alt="Enter Personal Skill & Education Info:">
-                <p style="text-align:center; font-family: Montserrat; font-weight: bold; font-size: 150%; color:#31a1c6">Step 1</p>
+                <p style="text-align:center; font-family: Montserrat; font-weight: bold; font-size: 50px; color:#094A68">Step 1</p>
                 <p style="text-align:center; font-family: Montserrat; font-size: 100%">Enter your skill, location, age, and education</p>
             </div>
             <div class="col-sm" style="margin: auto;">
@@ -48,7 +56,7 @@
             </div>
             <div class="col-sm">
                 <img src="~/src/img/ml_image.png" class="img-fluid" alt="Machine Model Analysis:">
-                <p style="text-align:center; font-family: Montserrat; font-weight: bold; font-size: 150%; color:#31a1c6">Step 2</p>
+                <p style="text-align:center; font-family: Montserrat; font-weight: bold; font-size: 50px; color:#094A68">Step 2</p>
                 <p style="text-align:center; font-family: Montserrat; font-size: 100%">Let our AI model work its magic and analyse your input</p>
             </div>
             <div class="col-sm" style="margin: auto;">
@@ -56,21 +64,29 @@
             </div>
             <div class="col-sm">
                 <img src="~/src/img/result_image.png" class="img-fluid" alt="Get Your Results!:">
-                <p style="text-align:center; font-family: Montserrat; font-weight: bold; font-size: 150%; color:#31a1c6">Step 3</p>
+                <p style="text-align:center; font-family: Montserrat; font-weight: bold; font-size: 50px; color:#094A68">Step 3</p>
                 <p style="text-align:center; font-family: Montserrat; font-size: 100%">Get the result of how you will most likely find a job in Melbourne.</p>
             </div>
-        </div>
 
-        <div class="row" style="padding-bottom:5%; width:100%">
-            <!-- page transition should be handled by MVC managers -->
-            <div class="col-lg" style="width:100%; text-align:center">
-                <analysis-btn2 type="button" id="start-analyse-btn" onclick="href='~/Search/Analysis'">Start Analysis</analysis-btn2>
-               
-            </div>
+
+
+
         </div>
+        <analysis-btn type="button" onclick="location.href='../Search/Analysis'">Get your Analysis!</analysis-btn>
+
     </div>
-
+  
 
 
 </body>
 </html>
+<style>
+    #a {
+        width: 249px;
+        height: 61px;
+        left: 593px;
+        top: 641px;
+    }
+
+
+</style>
