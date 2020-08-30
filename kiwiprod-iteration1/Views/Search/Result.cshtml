@@ -1,4 +1,68 @@
 ﻿@model kiwiprod_iteration1.Models.EducationLevelSet
 
+<html>
+<head>
+    <title class="kiwiprod-title">hopeMe - KiwiProd</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<h1> @ViewBag.Msg</h1>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="~/css/animate.css">
+
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+
+
+    <link rel="stylesheet" href="~/css/flaticon.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/howitwork.css">
+    <!-- import montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .navbar-dark .navbar-nav .show > .nav-link,
+        .navbar-dark .navbar-nav .active > .nav-link,
+        .navbar-dark .navbar-nav .nav-link.show,
+        .navbar-dark .navbar-nav .nav-link.active {
+            font-weight: bold;
+            color: #094A68;
+        }
+    </style>
+</head>
+<body style="background-color:#FFFFFF">
+    <div class="container">
+        <div class="row" style="margin-top:15%">
+            <div class="col-lg">
+                <p style="font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 200%; line-height: 44px; color: #094A68; ">Your employment rate <br />based on educaiton level:</p>
+                <p style="font-family: Montserrat; 
+                            font-style: normal; font-weight: 600; 
+                            font-size: 120px;
+                            line-height: 146px; 
+                            color: #F7D062;
+                            background: #FFFFFF;
+                            text-align:center;
+                            box-shadow: 0px 2px 15px rgba(255, 196, 91, 0.58);
+                            border-radius: 101px;"> @ViewBag.rate </p>
+            </div>
+          
+            <div class="col-sm" style="">
+                <img src="~/src/img/employment_share_victoria_pie.png" class="img-fluid" alt="">
+            </div>
+        </div>
+         <analysis-btn type="button" style="color: #094A68;"
+                value="Show latest job news" onclick="location.href='../Home/news2"> </analysis-btn>
+       
+       
+    </div>
+    
+
+</body>
+
+
+
+
+</html>

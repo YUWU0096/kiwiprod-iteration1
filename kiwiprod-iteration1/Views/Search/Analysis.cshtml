@@ -40,43 +40,51 @@
     </style>
 </head>
 <body style="background: linear-gradient(180deg, #27A2DB 10.99%, rgba(172, 229, 255, 0) 100%);">
-    <div class="container" style="margin-top:8%; margin-bottom: 5%">
+    <div class="container col-12 col-sm-6 col-md-8" style="margin-top:8%; margin-bottom: 1%">
         <div class="col-lg">
             <choose>Choose your education level:</choose>
         </div>
     </div>
     @using (Html.BeginForm("Result", "Search", FormMethod.Post))
     {
-        <form action="/action_page.php">
-            <div class="container" style="width:100%">
+<form action="/action_page.php">
+    <div class="container col-12 col-sm-6 col-md-8" style="width:100%">
 
-             @*<div class="col-sm-4">
-                <label for="age">Age</label><br>
-                @Html.DropDownList("age", ViewBag.age as SelectList, "-- Select Age --", new { style = "width: 100%" })
-            </div>*@
-             <div class="col-sm-4">
+        @*<div class="col-sm-4">
+            <label for="age">Age</label><br>
+            @Html.DropDownList("age", ViewBag.age as SelectList, "-- Select Age --", new { style = "width: 100%" })
+        </div>*@
+        <div class="col-sm-4 col-12 col-sm-6 col-md-8">
+
             <Education>Education</Education><br>
-            @Html.DropDownList("education", ViewBag.education as SelectList, "-- Select Education Level --", new { style = "width: 100%" })
-
-             </div>
-                @*<div class="col-sm-4">
-                    <label for="skill">Skill</label><br>
-                    @Html.DropDownList("skill", ViewBag.skill as SelectList, "-- Select skill --", new { style = "width: 100%" })
-                </div>
-                <div class="col-sm-4">
-                    <label for="location">Location</label><br>
-                    <input style="width:100%" type="text" id="Location" name="Location">
-                </div>*@
-
-    </div>
-    <div class="row" style="padding-top:10%; width:100%">
-        <!-- page transition should be handled by MVC managers -->
-        <div class="col-lg" style="width:100%; text-align:center">
-            <input  type="submit" value="submit" />
-            @*<analysis-btn2 type="button" value="Submit" onclick="location.href='~/Search/Result'">Get your Analysis!</analysis-btn2>*@
+            @Html.DropDownList("education", ViewBag.education as SelectList, "-- Select Education Level --", new { style = "width: 50%;margin-top:4%" })
         </div>
+        @*<div class="col-sm-4">
+            <label for="skill">Skill</label><br>
+            @Html.DropDownList("skill", ViewBag.skill as SelectList, "-- Select skill --", new { style = "width: 100%" })
+        </div>
+        <div class="col-sm-4">
+            <label for="location">Location</label><br>
+            <input style="width:100%" type="text" id="Location" name="Location">
+        </div>*@
+        <div class="col-sm-4 col-12 col-sm-6 col-md-8" >
+            <!-- page transition should be handled by MVC managers -->
+            <div class="col-4" style="text-align:center">
+                <analysis-btn type="button">
+                    get results
+                </analysis-btn>
+
+            </div>
+
+        </div>
+        @*<div class="col-4"  style="text-align:center">
+            <analysis-btn type="button" style="background: url(../src/img/Vector2.svg)"
+                          value="Submit" onclick="location.href='../Home/Index'"> </analysis-btn>
+        </div>*@
     </div>
-   
+
+    
+
 </form>
        
     }

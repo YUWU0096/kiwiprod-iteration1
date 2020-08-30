@@ -261,6 +261,8 @@
     <Content Include="src\img\892b8d6d6f7d23c10cd7c43878ba627.png" />
     <Content Include="src\img\arrow-left-bl.png" />
     <Content Include="src\img\austin-distel-gUIJ0YszPig-unsplash.png" />
+    <Content Include="src\img\employment_share_victoria.png" />
+    <Content Include="src\img\employment_share_victoria_pie.png" />
     <Content Include="src\img\evangeline-shaw-VLkoOabAxqw-unsplash.png" />
     <Content Include="src\img\frontpage_infographic.png" />
     <Content Include="src\img\laptop-guy.png" />
@@ -269,6 +271,8 @@
     <Content Include="src\img\result_image.png" />
     <Content Include="src\img\skill_image.png" />
     <Content Include="src\img\upward-arrow.svg" />
+    <Content Include="src\img\Vector.svg" />
+    <Content Include="src\img\Vector2.svg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

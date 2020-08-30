@@ -28,13 +28,32 @@ namespace kiwiprod_iteration1.Controllers
 
         public ViewResult Result(FormCollection Fc)
         {
+            int y;
+            if (int.TryParse(Fc["Education"],out y))
+            {
+                y = int.Parse(Fc["Education"]);
+                foreach (var x in sd.EducationLevelSet)
+                {
+                    if (x.Id == y)
+                    {
+                        ViewBag.Msg = x.level;
+                    }
+                }
+                foreach (var degree in sd.degreeEmployment)
+                {
+                    if (degree.Degree == ViewBag.Msg)
+                    {
+
+                        ViewBag.rate = degree.Employment_Rate.ToString("#.##");
+                    }
+                }
+            }
+            else {
+                ViewBag.rate = 0;
+            }
+          
            
-            EducationLevelSet edu = new EducationLevelSet();
-            edu.level = Fc["Education"].ToString();
-
-            ViewBag.Msg = edu.level;
             return View();
-
         }
     
     }
