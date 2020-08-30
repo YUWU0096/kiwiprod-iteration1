@@ -10,10 +10,10 @@ namespace kiwiprod_iteration1.Controllers
     public class SearchController : Controller
     {
         // GET: Search
-
+        searchDBEntities sd = new searchDBEntities();
         public ActionResult Analysis()
         {
-            searchDBEntities sd = new searchDBEntities();
+           
             ViewBag.age = new SelectList(sd.AgeSet, "Id", "Age");
             ViewBag.education = new SelectList(sd.EducationLevelSet, "Id", "level");
             ViewBag.skill = new SelectList(sd.SkillsSet, "Id", "skillName");
@@ -26,10 +26,14 @@ namespace kiwiprod_iteration1.Controllers
         
         [HttpPost]
 
-        public ActionResult Analysis(searchDBEntities sc)
+        public ViewResult Result(FormCollection Fc)
         {
            
-            return View(sc);
+            EducationLevelSet edu = new EducationLevelSet();
+            edu.level = Fc["Education"].ToString();
+
+            ViewBag.Msg = edu.level;
+            return View();
 
         }
     

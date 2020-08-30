@@ -6,10 +6,10 @@
     <edmx:Diagrams>
       <Diagram DiagramId="947d33bc882247ea9d8090363f452534" Name="Diagram1" ZoomLevel="83">
         <EntityTypeShape EntityType="searchDBModel.AgeSet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="searchDBModel.EducationLevelSet" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="searchDBModel.EducationLevelSet" Width="3" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="searchDBModel.LocationSet" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="searchDBModel.SkillsSet" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="searchDBModel.degreeEmployment" Width="1.5" PointX="5.625" PointY="3.125" />
+        <EntityTypeShape EntityType="searchDBModel.degreeEmployment" Width="2.75" PointX="6.25" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
