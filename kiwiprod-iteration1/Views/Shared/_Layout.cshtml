@@ -4,62 +4,36 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/prototype_stylesheet.css">
-    
+    <link rel="stylesheet" type="text/css" href="~/css/prototype_background_stylesheet.css">
     <!-- import montserrat font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-        <div class="container" style="width:100%">
-            <div class="navbar-header" style="color: #094A68">
-                <kiwiprod-title style="position: absolute; width: 119.12px">Kiwiprod</kiwiprod-title>
-                <title-dots style="position: absolute; top: 5%">...</title-dots>
-            </div>
-            <div class="row" style="width:100%">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="~/Home/Index" class="nav-link">Home</a></li>
-                    <li class="nav-item active"><a href="~/Home/HowItWork" class="nav-link">How it works</a></li>
-                    <li class="nav-item active"><a href="~/Search/Analysis" class="nav-link">Get career advice</a></li>
-                    <li class="nav-item active"><a href="~/Home/news2" class="nav-link">News</a></li>
-                    <li class="nav-item active"><a href="~/Home/Contact" class="nav-link">Contact us</a></li>
-                </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container" style="width:100vw">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="navbar-header" style="color: #094A68">
+                        <kiwiprod-title style="position: relative">Kiwiprod</kiwiprod-title>
+                        <title-dots style="position: relative; left: -35px; top:10px">...</title-dots>
+                    </div>
+                </div>
+                <div class="col-lg">
+                        <ul class="navbar-nav ml-auto" style="font-size: 1.5vh">
+                            <li class="nav-item active"><a href="~/Home/Index" class="nav-link">Home</a></li>
+                            <li class="nav-item active"><a href="~/Home/HowItWork" class="nav-link">How it works</a></li>
+                            <li class="nav-item active"><a href="~/Search/Analysis" class="nav-link">Get career advice</a></li>
+                            <li class="nav-item active"><a href="~/Home/news2" class="nav-link">News</a></li>
+                            <li class="nav-item active"><a href="~/Home/Contact" class="nav-link">Contact us</a></li>
+                            <li class="nav-item active"><a href="~/Home/about" class="nav-link">About us</a></li>
+                        </ul>
+                </div>
             </div>
         </div>
     </nav>
 
-
-
-    @*<div class="container body-content">
-
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
-            </footer>
-        </div>*@
     @RenderBody()
-    @*<footer class="ftco-footer ftco-footer-2 ftco-section">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-md">
-                        <div class="ftco-footer-widget mb-4">
-                            <h2 class="ftco-footer-logo">IT<span>solution</span></h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                            <ul class="ftco-footer-social list-unstyled mt-2">
-                                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </footer>*@
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
