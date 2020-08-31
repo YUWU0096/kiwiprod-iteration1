@@ -1,224 +1,101 @@
 ﻿<!DOCTYPE html>
-<head>
+<html>
+    <head>
+        <style>
+            body {
+                background: linear-gradient(241.35deg, #27A2DB 11.14%, #061A24 92.33%);
+            }
+            whorwe {
+                width: 308px;
+                height: 45px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 46px;
+                color: #FFFFFF;
+            }
+            #descriptiontext {
+                width: auto;
+                height: 83px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                color: #FFFFFF;
+            }
+            #profileimg {
+                width: 131px;
+                height: 131px;
+                border: 3px solid #27A2DB;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+            .navbar-dark .navbar-nav .show > .nav-link,
+            .navbar-dark .navbar-nav .active > .nav-link,
+            .navbar-dark .navbar-nav .nav-link.show,
+            .navbar-dark .navbar-nav .nav-link.active {
+                font-weight: bold;
+            }
+        </style>
 
-    <style>
-        body {
-            background: linear-gradient(241.35deg, #27A2DB 11.14%, #061A24 92.33%);
-        }
-    </style>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="~/css/prototype_stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="~/css/prototype_background_stylesheet.css">
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="~/css/prototype_stylesheet.css">
 
-    <style>
-        #y {
-            position: absolute;
-            width: 440px;
-            height: 83px;
-            left: 250px;
-            top: 236px;
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: 156%;
-            color: #FFFFFF;
-        }
-    </style>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <style>
-        #an {
-            position: absolute;
-            width: 440px;
-            height: 144px;
-            left: 461px;
-            top: 362px;
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: 156%;
-            /* or 25px */
-            color: #FFFFFF;
-        }
-    </style>
-
-    <style>
-        #v {
-            position: absolute;
-            width: 440px;
-            height: 133px;
-            left: 250px;
-            top: 546px;
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: 156%;
-            /* or 31px */
-            color: #FFFFFF;
-        }
-    </style>
-
-    <style>
-        #c {
-            position: absolute;
-            width: 440px;
-            height: 165px;
-            left: 461px;
-            top: 760px;
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: 156%;
-            /* or 31px */
-            color: #FFFFFF;
-        }
-    </style>
-
-    <style>
-        #w {
-            width: 308px;
-            height: 45px;
-            margin-left: 600px;
-            margin-top: 40px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 46px;
-            color: #FFFFFF;
-        }
-    </style>
-
-    <style>
-        #h {
-            position: absolute;
-            width: 394px;
-            height: 155px;
-            bottom: -70%;
-            right: 0%;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 110px;
-            line-height: 158.47%;
-            /* or 174px */
-            letter-spacing: -0.075em;
-            color: #000000;
-            text-shadow: 0px 5px 20px #24343C;
-        }
-    </style>
-
-    <style>
-         #7 {
-            position: absolute;
-            width: 131px;
-            height: 131px;
-            left: 7004px;
-            top: 800px;
-
-            border: 3px solid #27A2DB;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        }
-    </style>
-
-    <style>
-        #8 {
-            position: absolute;
-            width: 131px;
-            height: 131px;
-            left: 901px;
-            top: 370px;
-            border: 3px solid #27A2DB;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        }
-    </style>
-
-    <style>
-        #9 {
-            position: absolute;
-            width: 131px;
-            height: 131px;
-            left: 900px;
-            top: 740px;
-            border: 3px solid #27A2DB;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        }
-    </style>
-
-    <style>
-        #10 {
-            position: absolute;
-            width: 131px;
-            height: 131px;
-            left: 454px;
-            top: 553px;
-            border: 3px solid #27A2DB;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        }
-    </style>
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="~/css/prototype_stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="~/css/prototype_background_stylesheet.css">
-    <style>
-        .navbar-dark .navbar-nav .show > .nav-link,
-        .navbar-dark .navbar-nav .active > .nav-link,
-        .navbar-dark .navbar-nav .nav-link.show,
-        .navbar-dark .navbar-nav .nav-link.active {
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <link rel="stylesheet" type="text/css" href="~/css/prototype_stylesheet.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</body>
-
-
-<p id="w">
-    Who are we?
-</p>
-
-<img style="margin-left: 40px; margin-top: 1px;" id="7" src="~/src/img/Ellipse 8.png" />
-
-<p id="y">
-    Yu Wu: Master of Information technology student having strong forte in the internet application, project management, software management.
-
-</p>
-
-
-<p id="an">
-    Anzhela Matveenko: Master of Information Technology student having a strong suit in RPA Blue prism, UI, project management, working in a start-up. I believe in science and the greater good.
-</p>
-<p id="c">
-    Can Liang: Master of Data Science student proficient in .NET framework, Web Development, Database Management.
-</p>
-<p id="v">
-    Vaishnavi Bulbule: Master of Business Information System student with experience in Business Analysis,  Salesforce developer, project management, Business Intelligence Reporting, Data warehousing, SAP. Working as a business administrator at a small scale company.
-</p>
-
-
-
-<p id="h">
-
-    <img src="~/src/img/hopme.png" />
-</p>
-
-<p id="8">
-    <img style="margin-left: 1000px; margin-top: 10px;" id="7" src="~/src/img/Ellipse 10.png" />
-
-</p>
-<
-<p id="10">
-
-    <img style="margin-left: 40px; margin-top: 30px;" id="7" src="~/src/img/Ellipse 7.png" />
-</p>
-
-<p id="9">
-
-<img style="margin-left: 1000px; margin-top: -10px;" id="7" src="~/src/img/Ellipse 9.png" />
-</p>
+        <div class="container" style="margin-top:10vh">
+            <div class="row justify-content-center"  style="max-width:65%;">
+                <whorwe>Who are we?</whorwe>
+            </div>
+            <div class="row"  style="margin-top: 35px">
+                <div class="col-sm">
+                    <img class="img-fluid d-none d-sm-block" id="profileimg" src="~/src/img/Ellipse 8.png" />
+                </div>
+                <div class="col-xl">
+                    <p id="descriptiontext">
+                        Yu Wu: Master of Information technology student having strong forte in the internet application, project management, software management.
+                    </p>
+                </div>
+            </div>
+            <div class="row"  style="margin-top: 35px">
+                <div class="col-xl">
+                    <p id="descriptiontext">
+                        Anzhela Matveenko: Master of Information Technology student having a strong suit in RPA Blue prism, UI, project management, working in a start-up. I believe in science and the greater good.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <img class="img-fluid d-none d-sm-block" id="profileimg" src="~/src/img/Ellipse 10.png" />
+                </div>
+            </div>
+            <div class="row"  style="margin-top: 35px">
+                <div class="col-sm">
+                    <img class="img-fluid d-none d-sm-block" id="profileimg" src="~/src/img/Ellipse 9.png" />
+                </div>
+                <div class="col-xl">
+                    <p id="descriptiontext">
+                        Can Liang: Master of Data Science student proficient in .NET framework, Web Development, Database Management.
+                    </p>
+                </div>
+            </div>
+            <div class="row"  style="margin-top: 35px">
+                <div class="col-xl">
+                    <p id="descriptiontext">
+                        Vaishnavi Bulbule: Master of Business Information System student with experience in Business Analysis, Salesforce developer, project management, Business Intelligence Reporting, Data warehousing, SAP. Working as a business administrator at a small scale company.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <img class="img-fluid d-none d-sm-block" id="profileimg" src="~/src/img/Ellipse 7.png" />
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <img src="~/src/img/hopme.png" />
+            </div>
+        </div>
+    </body>
+</html>
