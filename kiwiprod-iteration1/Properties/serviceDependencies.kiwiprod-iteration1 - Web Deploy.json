@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/kiwiprod-iteration1dbserver/databases/kiwiprod-iteration1_db",
+      "type": "mssql.azure",
+      "connectionId": "SearchContainer",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

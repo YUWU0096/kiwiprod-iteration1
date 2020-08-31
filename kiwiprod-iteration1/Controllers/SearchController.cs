@@ -10,13 +10,13 @@ namespace kiwiprod_iteration1.Controllers
     public class SearchController : Controller
     {
         // GET: Search
-        searchDBEntities sd = new searchDBEntities();
+        webModel sd = new webModel();
         public ActionResult Analysis()
         {
            
-            ViewBag.age = new SelectList(sd.AgeSet, "Id", "Age");
-            ViewBag.education = new SelectList(sd.EducationLevelSet, "Id", "level");
-            ViewBag.skill = new SelectList(sd.SkillsSet, "Id", "skillName");
+            //ViewBag.age = new SelectList(sd.AgeSet, "Id", "Age");
+            ViewBag.education = new SelectList(sd.EducationLevelSets, "Id", "level");
+            ViewBag.skill = new SelectList(sd.degreeEmployments, "Id", "skillName");
             //ViewBag.education = new SelectList(sd.EducationLevelSet, "Id", "level");
            
             
@@ -32,14 +32,14 @@ namespace kiwiprod_iteration1.Controllers
             if (int.TryParse(Fc["Education"],out y))
             {
                 y = int.Parse(Fc["Education"]);
-                foreach (var x in sd.EducationLevelSet)
+                foreach (var x in sd.EducationLevelSets)
                 {
                     if (x.Id == y)
                     {
                         ViewBag.Msg = x.level;
                     }
                 }
-                foreach (var degree in sd.degreeEmployment)
+                foreach (var degree in sd.degreeEmployments)
                 {
                     if (degree.Degree == ViewBag.Msg)
                     {
@@ -49,6 +49,7 @@ namespace kiwiprod_iteration1.Controllers
                 }
             }
             else {
+                ViewBag.mention = "You need to select one level ";
                 ViewBag.rate = 0;
             }
           
