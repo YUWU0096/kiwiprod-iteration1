@@ -17,9 +17,9 @@ Built With:
     C# .NET MVC
 
 Authors:
-    Anzhela Meteevenko
-    Can Liang
-    Vaishinavi Bulbulu
+    Anzhela Meteevenko；
+    Can Liang；
+    Vaishinavi Bulbulu；
     Yu Wu
 
 License:
