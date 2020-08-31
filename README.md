@@ -17,10 +17,10 @@ Built With:
     C# .NET MVC
 
 Authors:
-    Anzhela Meteevenko
-    Can Liang
-    Vaishinavi Bulbulu
+    Anzhela Matveenko, 
+    Can Liang, 
+    Vaishnavi Bulbule,
     Yu Wu
-
+    
 License:
     This project is licensed under the Academic Free License v3.0 (AFL-3.0).

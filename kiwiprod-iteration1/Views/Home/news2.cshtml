@@ -4,8 +4,8 @@
     <!-- import montserrat font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="~/css/prototype_stylesheet.css">
-
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/howitwork.css">
     <!--<rssapp-carousel class="center-block" id="4jDdS8XjIL3AQRM8"></rssapp-carousel>
     <script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>-->
     <style>
@@ -14,6 +14,7 @@
         .navbar-dark .navbar-nav .nav-link.show,
         .navbar-dark .navbar-nav .nav-link.active {
             font-weight: bold;
+            color: #094A68;
         }
 
         #a {
@@ -33,38 +34,26 @@
             top: 22%;
             z-index: -1;
         }
-        #title {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 36px;
-            line-height: 44px;
-            color: #114F6B;
-        }
     </style>
 </head>
-<body style="background-color:white">
-    <div class="row">
-        <p id="title">
-            Latest job news tailored to your intrests
-        </p>
-
-
-    </div>
-    <p id="a">
-        <img class="img-responsive" src="~/src/img/287f32dab9cc416c4332e4a0951ba7b.png" />
-    </p>
-    <p id="b">
-        <img class="img-responsive" src="~/src/img/892b8d6d6f7d23c10cd7c43878ba627.png" />
-    </p>
+<body>
     <div class="container-fluid" style="height: 100%; width:100%">
-
-        <div>
-            <div class="col-lg" style="max-width: 100%; margin-top: calc(5rem - 10px)" >
-                <div class="card-body">
-                    <rssapp-carousel id="OWohZF67SoaLEtIH"></rssapp-carousel>
-                    <script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
-                </div>
+        <div class="row justify-content-center" style="text-align: left; max-width: 50vw">
+            <p style="color: #094A68; font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 130%">Latest job news tailored to your interests</p>
+        </div>
+        <p id="a">
+            <img class="img-fluid d-none d-sm-block" src="~/src/img/287f32dab9cc416c4332e4a0951ba7b.png" />
+        </p>
+        <p id="b">
+            <img class="img-fluid d-none d-sm-block"  src="~/src/img/892b8d6d6f7d23c10cd7c43878ba627.png" />
+        </p>
+        <div class="row" style="max-width: 100%; margin-top: calc(20vh - 100px)">
+            <div class="card-body">
+                <rssapp-carousel id="OWohZF67SoaLEtIH"></rssapp-carousel>
+                <script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
             </div>
         </div>
     </div>
