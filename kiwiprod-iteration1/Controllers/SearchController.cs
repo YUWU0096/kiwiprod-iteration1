@@ -26,7 +26,7 @@ namespace kiwiprod_iteration1.Controllers
         
         [HttpPost]
 
-        public ViewResult Result(FormCollection Fc)
+        public ActionResult Result(FormCollection Fc)
         {
             int y;
             if (int.TryParse(Fc["Education"],out y))
@@ -47,10 +47,13 @@ namespace kiwiprod_iteration1.Controllers
                         ViewBag.rate = degree.Employment_Rate.ToString("#.#");
                     }
                 }
+                
             }
             else {
                 ViewBag.mention = "You need to select one level ";
                 ViewBag.rate = 0;
+                return RedirectToAction("Analysis", "Search");
+            
             }
           
            
